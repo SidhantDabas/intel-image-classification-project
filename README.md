@@ -1,4 +1,3 @@
-# intel-image-classification-project
 # Intel Image Classification with CNNs
 
 **Dataset & Task:**  
