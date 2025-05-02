@@ -21,12 +21,12 @@ Each model was evaluated under various hyperparameters: **learning rates**, **ac
 
 ## 📊 Results Summary
 
-| Model           | Best Epochs | Learning Rate | Activation | Train Acc. | Val Acc. | Test Acc. |
-|-----------------|-------------|----------------|------------|------------|----------|-----------|
-| Custom CNN 1    | 25          | 0.001          | ReLU       | 81.8%      | 79.5%    | 80.3%     |
-| Custom CNN 2    | 25          | 0.001          | ReLU       | 81.2%      | 80.9%    | 81.3%     |
-| VGG16 *(pretrained)*       | 15          | 0.0001         | ReLU       | 83.4%      | 83.7%    | 81.7%     |
-| MobileNetV2 *(pretrained)* | 15          | 0.0001         | ReLU       | 96.9%      | 92.4%    | 90.3%     |
+| Model         | Best Epochs | Best Val Accuracy | Best Train Accuracy | Best Val Loss | Test Accuracy | Test Loss |
+|---------------|-------------|-------------------|----------------------|----------------|----------------|-----------|
+| VGG16         | 16          | 0.8738            | 0.8223               | 0.3562         | 0.8620         | 0.3718    |
+| MobileNetV2   | 21          | 0.9290            | 0.9690               | 0.2129         | 0.9273         | 0.2115    |
+| CustomModel1  | 24          | 0.8245            | 0.8260               | 0.5062         | 0.8407         | 0.4689    |
+| CustomModel2  | 25          | 0.8352            | 0.8272               | 0.4714         | 0.8323         | 0.4808    |
 
 > _Best Epochs_: Based on early stopping criteria on validation loss.  
 > _Accuracies_ are from final evaluation across training, validation, and test sets.
